@@ -1,0 +1,52 @@
+<!DOCTYPE html> 
+<html lang="en"> 
+<head> 
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+  <title>Zoo</title> 
+<link rel="stylesheet" type="text/css" href="style.css">
+<script src="javascript.js"></script>
+</head> 
+<body> 
+	<div id="headerDiv">
+	    <p>Your Own Zoo!</p>
+	</div>
+<div id="mainDiv">
+<button class="open-button" onclick="openForm()">Create Your Zoo!</button>
+<div class="form-container">
+  <div id="zoo0" class="animalsDiv"> </div>
+  <div id="zoo1" class="animalsDiv"> </div>
+  <div id="zoo2" class="animalsDiv"> </div>
+  <div id="zoo3" class="animalsDiv"> </div>
+  <div id="zoo4" class="animalsDiv"> </div>
+  <div id="zoo5" class="animalsDiv"> </div>
+   
+   <div class="form-popup" id="myForm">
+    <h2>Create Your Zoo!</h2>
+    <label for="animalType"><b>Choose Animal For Zoo</b></label>
+    <select id="Animals" name="animalType">
+    <option value="bear" >Bear</option>
+    <option value="tiger" selected="selected">Tiger</option>
+    <option value="elephant" >Elephant</option>
+    <option value="zebra" >Zebra</option>
+    <option value="raccoon" >Raccoon</option>
+    <option value="fox" >Fox</option>
+    <option value="giraffe" >Giraffe</option>
+    <option value="hippopotamus" >Hippopotamus</option>
+     
+   </select>
+    <label for="name"><b>Animal Name</b></label>
+    <input type="text" name="name" id="AnimalName" placeholder="Enter Name">
+
+    <button type="button" class="btn" onclick="FormGettingDataAddObj()">Add Animal</button>
+    <button type="button" class="btn cancel" onclick="closeForm()">Close</button>
+  </div>
+</div>
+ 
+</div>
+</body> 
+</html>
